@@ -1,0 +1,16 @@
+.ClientList-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ClientList-container section {
+    width: 70%;
+}
+
+/* ---------- Media Query Users ---------- */
+@media (max-width: 1200px) {
+    .ClientList-container section {
+        width: 90%;
+    }
+}

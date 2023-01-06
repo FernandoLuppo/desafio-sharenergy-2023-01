@@ -1,0 +1,53 @@
+.RandomDog-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RandomDog-container section {
+    width: 40%;
+    margin: 40px 0;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.RandomDog-container section {
+    text-align: center;
+}
+.RandomDog-container section p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.RandomDog-container section button {
+    cursor: pointer;
+    width: 80%;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
+    transition: 0.2s;
+    color: #fff;
+    background-color: #00A2A2;
+}
+.RandomDog-container section button:hover {
+    background-color: #10c4c4;
+}
+
+/* ---------- Media Query Users ---------- */
+@media (max-width: 1400px) {
+    .RandomDog-container section {
+        width: 60%;
+    }
+}
+@media (max-width: 900px) {
+    .RandomDog-container section {
+        width: 80%;
+        padding: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .RandomDog-container section {
+        width: 95%;
+    }
+}

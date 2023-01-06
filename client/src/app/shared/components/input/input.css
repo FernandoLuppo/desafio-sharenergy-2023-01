@@ -1,0 +1,11 @@
+.Input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.Input-container input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #161C2D;
+    border-radius: 5px;
+}

@@ -1,0 +1,64 @@
+.HttpCat-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HttpCat-container section {
+    position: relative;
+    width: 40%;
+    margin: 40px 0;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.HttpCat-container > section > div > h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.HttpCat-container > section > div > p {
+    margin-bottom: 5px;
+}
+.HttpCat-container > section > div > input {
+    width: 300px;
+    padding: 5px 10px;
+    border: 1px solid #bbbbbb;
+}
+.HttpCat-container > section > div > button {
+    cursor: pointer;
+    padding: 6px 10px;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
+    color: #fff;
+    background-color: #00A2A2;
+}
+.HttpCat-container > section > div > button:hover {
+    background-color: #10c4c4;
+}
+
+/* ---------- Media Query Users ---------- */
+@media (max-width: 1120px) {
+    .HttpCat-container section {
+        width: 60%;
+    }
+}
+@media (max-width: 740px) {
+    .HttpCat-container section {
+        width: 80%;
+    }
+}
+@media (max-width: 555px) {
+    .HttpCat-container section {
+        width: 95%;
+    }
+    .HttpCat-container > section > div > input {
+        width: 100%;
+        padding: 5px 10px;
+        padding-right: 30px;
+        border: 1px solid #bbbbbb;
+    }
+    .HttpCat-container > section > div > button {
+        width: 100%;
+    }
+}

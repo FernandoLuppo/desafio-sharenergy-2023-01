@@ -1,0 +1,53 @@
+.Register-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Register-container section {
+    width: 40%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Register-container section h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.Register-container section div {
+    margin-bottom: 40px;
+}
+.Register-container section div input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #161C2D;
+    border-radius: 5px;
+}
+.Register-container section div button {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: #fff;
+    background-color: #00A2A2;
+}
+.Register-container section div button:hover {
+    background-color: #10c4c4;
+}
+
+/* ---------- Media Query Users ---------- */
+@media (max-width: 1024px) {
+    .Register-container section {
+        width: 80%;
+    }
+}
+@media (max-height: 650px) {
+    .Register-container section {
+        margin: 20px 0;
+    }
+}

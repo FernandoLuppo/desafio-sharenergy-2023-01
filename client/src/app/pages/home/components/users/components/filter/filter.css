@@ -1,0 +1,53 @@
+.Filter-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+}
+.Filter-searchInputs {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Filter-searchInputs input {
+    width: 300px;
+    padding: 5px 10px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+}
+.Filter-searchIcon {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}
+.Filter-dataResult {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* ---------- Media Query Filter ---------- */
+@media (max-width: 960px) {
+    .Filter-container {
+        width: 100%;
+        right: 0;
+        left: 0;
+        padding: 0 40px;
+    }
+    .Filter-searchInputs input {
+        width: 100%;
+    }
+    .Filter-dataResult {
+        width: 100%;
+    }
+}
+@media (max-width: 730px) {
+    .Filter-container {
+        padding: 0 20px;
+    }
+}

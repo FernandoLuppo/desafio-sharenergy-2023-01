@@ -1,0 +1,66 @@
+.Login-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Login-container section {
+    width: 40%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Login-container section h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.Login-container section div {
+    margin-bottom: 40px;
+}
+.Login-container section div input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #161C2D;
+    border-radius: 5px;
+}
+.Login-container section div button {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: #fff;
+    background-color: #00A2A2;
+}
+.Login-container section div button:hover {
+    background-color: #10c4c4;
+}
+.Login-register-button {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px !important;
+}
+.Login-register-button a {
+    font-weight: bold;
+    transition: 0.2s;
+    color: #727272; 
+}
+.Login-register-button a:hover {
+    color: #3b3b3b; 
+}
+
+/* ---------- Media Query Users ---------- */
+@media (max-width: 1024px) {
+    .Login-container section {
+        width: 80%;
+    }
+}
+@media (max-height: 650px) {
+    .Login-container section {
+        margin: 20px 0;
+    }
+}

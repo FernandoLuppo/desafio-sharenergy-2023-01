@@ -1,0 +1,22 @@
+.Footer-container {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background-color: #161C2D;
+}
+.Footer-container ul {
+    display: flex;
+    gap: 30px;
+}
+.Footer-container ul li {
+    cursor: pointer;
+    list-style: none;
+}
+.Footer-container span {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+}
