@@ -27,9 +27,9 @@ export const Login = () => {
         } else if (password === "" || password === null || password === undefined || password.length < 3) {
             alert("Campo Senha não pode estar vazio e deve conter mais que 3 caracteres")
         } else {
-            const isLogged = await auth.login(name, password)
+            const isLogged = await auth.login(name, password).catch(() => alert("Nome ou senha incorreto") )
             if (isLogged === true) navigate("/")
-            else alert("Esse usuário não existe")
+            
         }
     }
 

@@ -73,13 +73,13 @@ const userController = {
     
                         res.status(200).send(user)
                     } else {
-                        res.status(400).send("bad request")
+                        res.status(400).send("Nome ou senha incorreto")
                     }
 
                     
                 })
             })
-            .catch(error => res.status(200).send(error))
+            .catch(error => res.status(400).send(error))
         }
     },
 

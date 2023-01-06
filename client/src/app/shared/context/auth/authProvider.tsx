@@ -35,6 +35,8 @@ export const AuthProvider = ({ children }: { children:JSX.Element }) => {
             setId(response.data._id)
             return true
         } else {
+            console.log("ola");
+            alert("Senha ou usuário incorreto")            
             return false
         }
     }
