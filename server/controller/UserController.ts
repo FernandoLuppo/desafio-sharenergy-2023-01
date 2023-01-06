@@ -28,14 +28,21 @@ const userController = {
         if(errors.length > 1) {
             res.status(400).send(errors)
         } else {
-            const newUser = {
-                name, 
-                password: bcryptjs.hashSync(password, encrypted)
-            }
-            new User(newUser)
-            .save()
-            .then(() => res.status(200).send("Usuário cadastrado com sucesso"))
-            .catch((error: string) => res.status(400).send(error))
+            User.findOne({name: name})
+            .then((user) => {
+                if (user) {
+                    res.status(400).send("Usuário já cadastrado")
+                } else {
+                    const newUser = {
+                        name, 
+                        password: bcryptjs.hashSync(password, encrypted)
+                    }
+                    new User(newUser)
+                    .save()
+                    .then(() => res.status(200).send({message:"Usuário cadastrado com sucesso"}))
+                    .catch((error: string) => res.status(400).send(error))
+                }
+            })
         }
     },
 

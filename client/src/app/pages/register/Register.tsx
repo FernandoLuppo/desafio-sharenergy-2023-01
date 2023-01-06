@@ -22,7 +22,9 @@ export const Register = () => {
             alert("Campo Senha não pode estar vazio e deve conter mais que 3 caracteres")
         } else {
             await axios.post("http://localhost:8080/register", {name, password})
-            navigate("/login")
+            .then(res => {
+                if (res.data.message) navigate("/login")
+            }).catch(() => alert("Usuário já cadastrado"))
         }
     }
 
