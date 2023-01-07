@@ -28,7 +28,7 @@
 <br><br>
 
 <h3>
-  Link do vídeo explicando o projeto no Youtube: 
+  Link do vídeo explicando o projeto no Youtube: https://www.youtube.com/watch?v=DgugeE-O4p4&ab_channel=fernandoluppo
 </h3>
 
 <h2>Overview</h2>
